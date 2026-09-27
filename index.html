@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RailBoard | Live</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="logo">
+        <a href="http://vihaanvinoth.com" target="_blank">
+            <img src="https://cdn.hackclub.com/01a0de3c-f538-7d1f-a1ee-f0efcf2a26b7/VVNormal.png" alt="Logo of Vihaan Vinoth">
+        </a>
+    </div>
+    <h1 id="title">Station Board</h1>
+    <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="ALL">All Networks</button>
+        <button class="filter-btn" data-filter="METRO">Metro</button>
+        <button class="filter-btn" data-filter="VLINE">V/Line</button>
+    </div>
+    <div class="wrapper">
+        <div class="board-section">
+            <div class="table-scroll-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Destination</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="board-body">
+                        <tr>
+                            <td colspan="3">
+                                Establishing Connection...
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="map-section">
+            <h2>
+                Live Train Map
+            </h2>
+            <div id="map"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
