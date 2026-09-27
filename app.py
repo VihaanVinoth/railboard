@@ -610,8 +610,4 @@ if __name__ == "__main__":
     print("Health Check: http://127.0.0.1:5050/api/health")
     print()
 
-    app.run(
-        host="127.0.0.1",
-        port=5050,
-        debug=True
-    )
+    app.run(debug=True)
